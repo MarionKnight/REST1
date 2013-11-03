@@ -1,0 +1,6 @@
+<h2><%= @member.first_name.capitalize %>'s Page</h2><hr>
+<a href="/members/<%= @member.id %>/edit">Edit my page</a>
+<form action='/members/<%= @member.id %>' method='post'>
+  <input type="hidden" name="_method" value="delete" />
+  <input type="submit" value="Delete">
+</form>

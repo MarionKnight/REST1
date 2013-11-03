@@ -1,0 +1,8 @@
+<h1>All the users:</h1><hr>
+<% @members.each do |member| %>
+<p>
+  <a href="/members/<%= member.id %>">
+    <%= member.first_name %></a>
+</p>
+<% end %><hr>
+<a href="/members/new">Create New</a>

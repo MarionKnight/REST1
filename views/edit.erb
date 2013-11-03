@@ -1,0 +1,5 @@
+<form action='/members/<%= @member.id %>' method='post'>
+  <input type="text" name="first_name" value="<%= @member.first_name %>">
+  <input type="hidden" name="_method" value="patch" />
+  <input type="submit">
+</form>
